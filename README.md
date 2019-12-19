@@ -83,7 +83,7 @@ sudo docker-compose down -v
 # test
 
 ```
-sudo docker exec -it chat_nodejs sh -c "cd server && npm test"
+sudo docker exec -it nodejs sh -c "cd server && npm test"
 ```
 
 # 注意事項
