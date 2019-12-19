@@ -25,6 +25,10 @@ describe('l_upload', () => {
     let _count = 0;
 
     for (const file of files) {
+      if (file === 'tmp') {
+        continue;
+      }
+
       fs.unlinkSync(
         `${constant.PATH_UPLOAD_FILE[process.env.NODE_ENV]}/${file}`
       );
